@@ -1,1 +1,47 @@
-{"spider":"https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/jar/custom_spider.jar;md5;41c87635d7592069884a5dafa12acabe","sites":[{"type":3,"key":"niba","changeable":1,"name":"泥巴","api":"csp_NiNi","searchable":1},{"type":3,"key":"xingxing","changeable":1,"name":"星星","api":"csp_Star","searchable":1},{"type":3,"key":"douban","changeable":1,"name":"豆瓣","ext":"https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/json/douban.json","api":"csp_Douban","searchable":0},{"type":1,"key":"haiwaikan","changeable":1,"name":"海外看","api":"https://haiwaikan.com/api.php/provide/vod","searchable":1}],"lives":[{"epg":"http://epg.112114.xyz/?ch={name}&date={date}","type":0,"name":"央视·29台","playerType":1,"logo":"https://epg.112114.xyz/logo/{name}.png","url":"https://iptv-org.github.io/iptv/countries/cn.m3u"},{"epg":"http://epg.112114.xyz/?ch={name}&date={date}","type":0,"name":"央视卫视·28台","playerType":1,"logo":"https://epg.112114.xyz/logo/{name}.png","url":"https://cdn.jsdelivr.net/gh/vbskycn/iptv@master/tv/iptv4.m3u"}]}
+{
+  "spider": "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/jar/custom_spider.jar;md5;41c87635d7592069884a5dafa12acabe",
+  "lives": [
+    {
+      "name": "央视卫视·中文名36台",
+      "url": "./live.txt",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "type": 0,
+      "playerType": 1
+    },
+    {
+      "name": "央视·备用(英文名)",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "type": 0,
+      "playerType": 1
+    }
+  ],
+  "sites": [
+    {
+      "name": "泥巴",
+      "key": "niba",
+      "searchable": 1,
+      "api": "csp_NiNi",
+      "type": 3,
+      "changeable": 1
+    },
+    {
+      "name": "星星",
+      "key": "xingxing",
+      "searchable": 1,
+      "api": "csp_Star",
+      "type": 3,
+      "changeable": 1
+    },
+    {
+      "name": "海外看",
+      "key": "haiwaikan",
+      "searchable": 1,
+      "api": "https://haiwaikan.com/api.php/provide/vod",
+      "type": 1,
+      "changeable": 1
+    }
+  ]
+}
